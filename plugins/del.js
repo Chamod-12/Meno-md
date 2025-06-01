@@ -23,6 +23,6 @@ const key = {
         await conn.sendMessage(m.chat, { delete: key })
 } catch(e) {
 console.log(e);
-reply('🔥KAVIYA MD🔥 successful..👨‍💻✅')
+reply('🔥NADU MD🔥 successful..👨‍💻✅')
 } 
 })
