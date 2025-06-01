@@ -17,7 +17,7 @@ const url = data.url
     
     
 let desc = `
-⫷⦁[ *METHU MD MUSIC DOWNLOADING* ]⦁⫸
+⫷⦁[ *NADU MD MUSIC DOWNLOADING* ]⦁⫸
 
 🎵 *MUSIC FOUND!* 
 
@@ -29,9 +29,9 @@ let desc = `
 
 🎧 *ENJOY THE MUSIC BROUGHT TO YOU!*
 
-> *METHU MD WHATSAPP BOT* 
+> *NADU MD WHATSAPP BOT* 
 
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʜᴀɴᴜᴋᴀ ᴍᴅ*🚀* 
+> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ NADU ᴍᴅ*🚀* 
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
@@ -70,7 +70,7 @@ const url = data.url
     
     
 let desc = `
-⫷⦁[ *•METHU MD VIDEO DOWNLOADING* ]⦁⫸ 
+⫷⦁[ *•NADU MD VIDEO DOWNLOADING* ]⦁⫸ 
 
 🎥 *VIDEO FOUND!* 
 
@@ -82,9 +82,9 @@ let desc = `
 
 🎬 *ENJOY THE VIDEO BROUGHT TO YOU!*
 
-> *METHU MD WHATSAPP BOT* 
+> *NADU MD WHATSAPP BOT* 
 
-> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʜᴀɴᴜᴋᴀ ᴍᴅ🚀*
+> *©ᴘᴏᴡᴇʀᴇᴅ ʙʏ Nadu ᴍᴅ🚀*
 `
 
 await conn.sendMessage(from,{image:{url: data.thumbnail},caption:desc},{quoted:mek});
