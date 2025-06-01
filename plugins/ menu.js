@@ -351,7 +351,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363354023106228@newsletter',
+                        newsletterJid: '120363398452475846@newsletter',
                         newsletterName: config.BOT_NAME,
                         serverMessageId: 143
                     }
@@ -362,7 +362,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYT36/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://files.catbox.moe/zf8z97.opus' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
