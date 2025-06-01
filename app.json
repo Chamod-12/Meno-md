@@ -1,7 +1,7 @@
 {
-  "name": "𝐁.𝐌.𝐁-𝐗𝐌𝐃",
-  "description": "Javascript WhatsApp bot made by 𝙱.𝙼.𝙱-𝚇𝙼𝙳 ",
-  "keywords": ["𝐁.𝐌.𝐁-𝐗𝐌𝐃"],
+  "name": "NADU-MD",
+  "description": "Javascript WhatsApp bot made by NADU-MD ",
+  "keywords": ["NADU-MD"],
   
   
   "logo": "https://ibb.co/Cs0L5Rj0",
@@ -25,7 +25,7 @@
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
-      "value": "> 𝙱.𝙼.𝙱-𝚇𝙼𝙳 AM ONLINE BY MY B.M.B CREATOR⚡"
+      "value": "> NADU-MD AM ONLINE BY MY NADU CREATOR⚡"
     },
     
     "PREFIX": {
@@ -82,13 +82,13 @@
     "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*🎉👀 𝙹𝚄𝚂𝚃 𝙽𝙾𝚆 𝚂𝙴𝙴𝙽 𝙱𝚈 𝙱.𝙼.𝙱-𝚇𝙼𝙳🤩🥳😍*"
+      "value": "*🎉👀 𝙹𝚄𝚂𝚃 𝙽𝙾𝚆 𝚂𝙴𝙴𝙽 𝙱𝚈 NADU-MD😎🤏*"
     }, 
 
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "𝐁.𝐌.𝐁-𝐗𝐌𝐃✨"
+      "value": "NADU-MD✨"
 }, 
 
     "OWNER_NUMBER": {
@@ -100,7 +100,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "𝐁.𝐌.𝐁-𝐗𝐌𝐃"
+      "value": "NADU-MD"
 
       }, 
 
@@ -120,7 +120,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*𝐁.𝐌.𝐁-𝐗𝐌𝐃*"
+      "value": "*NADU-MD*"
     },
 
       "DELETE_LINKS": {
