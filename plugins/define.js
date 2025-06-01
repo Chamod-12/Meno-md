@@ -28,7 +28,7 @@ const wordInfo = `
 📝 *Example*: ${example}
 🔗 *Synonyms*: ${synonyms}
 
-> *@ 💫 KAVIYA MD 💫*`;
+> *@ 💫 NADU MD 💫*`;
 
                                  return reply(wordInfo);
                              } catch (e) {
