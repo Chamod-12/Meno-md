@@ -17,7 +17,7 @@ cmd({
   reply: _0x30d3fc
 }) => {
   try {
-    _0x30d3fc("*KAVIYA MD IS 💑 Fetching couple profile pictures...*");
+    _0x30d3fc("*NADU MD IS 💑 Fetching couple profile pictures...*");
     const _0x173643 = await axios.get("https://api.davidcyriltech.my.id/couplepp");
     if (!_0x173643.data || !_0x173643.data.success) {
       return _0x30d3fc("❌ Failed to fetch couple profile pictures. Please try again later.");
@@ -29,7 +29,7 @@ cmd({
         'image': {
           'url': _0x5d4b91
         },
-        'caption': "KAVIYA MD SUGGESTS: 👨 Male Couple Profile Picture"
+        'caption': "NADU MD SUGGESTS: 👨 Male Couple Profile Picture"
       }, {
         'quoted': _0x51cf3f
       });
@@ -39,7 +39,7 @@ cmd({
         'image': {
           'url': _0x5a1e4a
         },
-        'caption': "KAVIYA MD SUGGESTS: 👩 Female Couple Profile Picture"
+        'caption': "NADU MD SUGGESTS: 👩 Female Couple Profile Picture"
       }, {
         'quoted': _0x51cf3f
       });
