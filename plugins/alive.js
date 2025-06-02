@@ -7,21 +7,21 @@ cmd({
     alias: ["status", "runtime", "uptime"],
     desc: "Check uptime and system status",
     category: "main",
-    react: "⌚",
+    react: "👋",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
         const status = `
-╭──〔𝐁.𝐌.𝐁-𝐗𝐌𝐃〕───·๏
+╭──〔𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃〕───·๏
 ┃🛸┃• *⏳ Uptime*:  ${runtime(process.uptime())} 
 ┃🛸┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}GB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}TB
 ┃🛸┃• *⚙️ HostName*: ${os.hostname()}
-┃🛸┃• *👨‍💻 Creator*: 𝙱.𝙼.𝙱-𝚇𝙼𝙳
+┃🛸┃• *👨‍💻 Creator*: nadu md
 ┃🛸┃• *🧬 Version*: 1.0.0
 ╰──────────────┈⊷
-> © 𝐁.𝐌.𝐁-𝐗𝐌𝐃`;
+> © 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
@@ -32,8 +32,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363382023564830@newsletter',
-                    newsletterName: '𝐁.𝐌.𝐁-𝐗𝐌𝐃🔥',
+                    newsletterJid: '120363398452475846@newsletter',
+                    newsletterName: '𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃☠',
                     serverMessageId: 143
                 }
             }
