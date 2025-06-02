@@ -104,7 +104,7 @@ async (conn, m, { args, reply }) => {
             text += `│     *Message:* ${msg.content}\n│\n`;
         }
 
-        text += `╰─ Powered by *PKDRILLER*`;
+        text += `╰─ Powered by *NADU MD*`;
 
         await reply(text);
     } catch (e) {
