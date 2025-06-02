@@ -27,8 +27,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363382023564830@newsletter',
-                        newsletterName: "𝐁.𝐌.𝐁-𝐗𝐌𝐃 𝐏𝐀𝐘𝐌𝐄𝐍𝐓",
+                        newsletterJid: '120363398452475846@newsletter',
+                        newsletterName: "𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 𝐏𝐀𝐘𝐌𝐄𝐍𝐓",
                         serverMessageId: 143
                     }
                 }
