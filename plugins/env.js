@@ -19,7 +19,7 @@ cmd({
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
         // Define the settings message with the correct boolean checks
-        let envSettings = `╭〔 *【𝐁.𝐌.𝐁-𝐗𝐌𝐃】* 〕⊷
+        let envSettings = `╭〔 *𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃* 〕⊷
 ┃▸╭───────────
 ┃▸┃๏ *ENV SETTINGS 🗿*
 ┃▸└───────────···๏
@@ -55,8 +55,8 @@ async (conn, mek, m, { from, quoted, reply }) => {
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363382023564830@newsletter',
-                        newsletterName: "𝐓𝐇𝐄 𝐁.𝐌.𝐁-𝐗𝐌𝐃 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒🥰",
+                        newsletterJid: '120363398452475846@newsletter',
+                        newsletterName: "𝐓𝐇𝐄 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒🥰",
                         serverMessageId: 143
                     }
                 }
