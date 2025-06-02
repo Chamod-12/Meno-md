@@ -31,7 +31,7 @@ async (conn, mek, m, { from }) => {
         await conn.sendMessage(from, {
             image: { url: 'https://files.catbox.moe/klozvw.jpg' }, // Image URL from your request
             caption: `
-╭━〔 *💞𝗠𝗘𝗧𝗛𝗨_𝗠𝗗💞* 〕━┈⊷
+╭━〔 *☠𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃☠* 〕━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
 ┃◈┃• *Name* - ${ownerName}
@@ -39,14 +39,14 @@ async (conn, mek, m, { from }) => {
 ┃◈┃• *Version*: 1.0.0
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ©𝗠𝗘𝗧𝗛𝗨_𝗠𝗗`, // Display the owner's details
+> ©𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃`, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398452475846@newsletter',
-                    newsletterName: '𝗠𝗘𝗧𝗛𝗨_𝗠𝗗-𝗕𝗢𝗧 💞',
+                    newsletterName: '𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃-𝗕𝗢𝗧 💞',
                     serverMessageId: 143
                 }            
             }
@@ -68,7 +68,7 @@ async (conn, mek, m, { from }) => {
 
 cmd({
     pattern: "restart",
-    desc: "Restart the bot 𝗠𝗘𝗧𝗛𝗨_𝗠𝗗-𝗕𝗢𝗧",
+    desc: "Restart the bot 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃-𝗕𝗢𝗧",
     category: "owner",
     filename: __filename
 },
@@ -199,7 +199,36 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
         reply(`❌ Error blocking user: ${error.message}`);
     }
 });
-// 5. Unblock User
+// 5.getpp
+cmd({
+    pattern: "getpp",
+    desc: "Fetch the profile picture of a tagged or replied user.",
+    react: '♻',
+    category: "owner",
+    filename: __filename
+}, async (conn, mek, m, { quoted, isGroup, sender, participants, reply }) => {
+    try {
+        // Determine the target user
+        const targetJid = quoted ? quoted.sender : sender;
+
+        if (!targetJid) return reply("⚠️ Please reply to a message to fetch the profile picture.");
+
+        // Fetch the user's profile picture URL
+        const userPicUrl = await conn.profilePictureUrl(targetJid, "image").catch(() => null);
+
+        if (!userPicUrl) return reply("⚠️ No profile picture found for the specified user.");
+
+        // Send the user's profile picture
+        await conn.sendMessage(m.chat, {
+            image: { url: userPicUrl },
+            caption: "🖼️ Here is the profile picture of the specified user.\n\n> 🄿🄾🅆🄴🅁🄳 RED-SAMURAI-RUKA 😈"
+        });
+    } catch (e) {
+        console.error("Error fetching user profile picture:", e);
+        reply("❌ An error occurred while fetching the profile picture. Please try again later.");
+    }
+});
+// 6. Unblock User
 cmd({
     pattern: "unblock",
     desc: "Unblock a user.",
@@ -213,7 +242,7 @@ async (conn, mek, m, { from, isOwner, quoted, reply }) => {
     const user = quoted.sender;
     try {
         await conn.updateBlockStatus(user, 'unblock');
-        reply(`✅⎈ 𝗠𝗘𝗧𝗛𝗨_𝗠𝗗 ⎈ User ${user} unblocked successfully.`);
+        reply(`✅⎈ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ☠ User ${user} unblocked successfully.`);
     } catch (error) {
         reply(`❌ Error unblocking user: ${error.message}`);
     }
