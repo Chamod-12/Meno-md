@@ -66,8 +66,8 @@ ${translatedTafsirEnglish.text}`;
           forwardingScore: 999,  
           isForwarded: true,   
           forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363382023564830@newsletter', 
-            newsletterName: '𝐁.𝐌.𝐁-𝐗𝐌𝐃', 
+            newsletterJid: '120363398452475846@newsletter', 
+            newsletterName: '𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃', 
             serverMessageId: 143
           }
         }
@@ -456,8 +456,8 @@ async (conn, mek, m, { from, quoted, body,isCmd, command, args, q, isGroup, send
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363382023564830@newsletter',
-                        newsletterName: '𝐁.𝐌.𝐁-𝐗𝐌𝐃',
+                        newsletterJid: '120363398452475846@newsletter',
+                        newsletterName: '𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃',
                         serverMessageId: 143
                     }
                 }
