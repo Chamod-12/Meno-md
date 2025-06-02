@@ -35,7 +35,7 @@ cmd({
     const results = data.data.slice(0, 7).sort(() => Math.random() - 0.5);
 
     for (const video of results) {
-      const message = `𝗠𝗘𝗧𝗛𝗨_𝗠𝗗 *TikTok Video Result*:\n\n`
+      const message = `𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 *TikTok Video Result*:\n\n`
         
         + `*• Title*: ${video.title}\n`
         
@@ -54,7 +54,7 @@ cmd({
 *│wa.me/94741185866*
 *╰┈───────────╴╴╴•⟢*
 
-> powerd by 𝗻𝗮𝗱𝘂 / 𝗠𝗘𝗧𝗛𝗨_𝗠𝗗`;
+> powerd by nadu md`;
 
 
       if (video.nowm) {
