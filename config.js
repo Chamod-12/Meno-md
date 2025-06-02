@@ -9,7 +9,7 @@ SESSION_ID: process.env.SESSION_ID || "WupEjQ6J#DgSC9cPOrYroauPP1AHekVuGRX4AOFsu
 // add your Session Id 
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot
-BOT_NAME: process.env.BOT_NAME || "NADU MD",
+BOT_NAME: process.env.BOT_NAME || "SILENT-MD",
 // add bot namw here for menu
 CUSTOM_REACT: process.env.CUSTOM_REACT || "true",
 // make this true for custum emoji react    
@@ -21,11 +21,11 @@ OWNER_NUMBER: process.env.OWNER_NUMBER || "+94741185866",
 // add your bot owner number
 OWNER_NAME: process.env.OWNER_NAME || "NADU MD",
 // add bot owner name
-DESCRIPTION: process.env.DESCRIPTION || "*© NADU MD*",
+DESCRIPTION: process.env.DESCRIPTION || "*© SILENT MD*",
 // add bot owner name    
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/p9hyal.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "NADU MD IS ACTIVE AND ALIVE\n\n\nKEEP USING NADU MD FROM NADU TECH INC⚡",
+LIVE_MSG: process.env.LIVE_MSG || "SILENT MD IS ACTIVE AND ALIVE\n\n\nKEEP USING SILENT MD FROM NADU TECH INC⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
