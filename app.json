@@ -1,7 +1,7 @@
 {
-  "name": "NADU-MD",
-  "description": "Javascript WhatsApp bot made by NADU-MD ",
-  "keywords": ["NADU-MD"],
+  "name": "SILENT-MD",
+  "description": "Javascript WhatsApp bot made by SILENT-MD ",
+  "keywords": ["SILENT-MD"],
   
   
   "logo": "https://ibb.co/Cs0L5Rj0",
@@ -25,7 +25,7 @@
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
-      "value": "> NADU-MD AM ONLINE BY MY NADU CREATOR⚡"
+      "value": "> SILENT-MD AM ONLINE BY MY NADU CREATOR⚡"
     },
     
     "PREFIX": {
@@ -100,7 +100,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "NADU-MD"
+      "value": "SILENT-MD"
 
       }, 
 
@@ -120,7 +120,7 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*NADU-MD*"
+      "value": "*SILENT-MD*"
     },
 
       "DELETE_LINKS": {
