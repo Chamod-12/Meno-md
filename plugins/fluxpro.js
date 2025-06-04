@@ -66,11 +66,11 @@ cmd({
       return reply(`*Usage:* ${command} <prompt>\n\n*Example:* ${command} cat`);
     }
 
-    await reply('> *bmb xmd Processing Image...*');
+    await reply('> *SILENT MD Processing Image...*');
 
     const apiUrl = `https://api.davidcyriltech.my.id/flux?prompt=${encodeURIComponent(text)}`;
 
-    await conn.sendMessage(m.chat, { image: { url: apiUrl }, caption: `🎨 *Flux Image Generator*\n\n📄 *Prompt:* ${text}\n\n> 𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘 𝐁.𝐌.𝐁-𝐗𝐌𝐃` }, { quoted: m });
+    await conn.sendMessage(m.chat, { image: { url: apiUrl }, caption: `🎨 *Flux Image Generator*\n\n📄 *Prompt:* ${text}\n\n> 𝐏𝐎𝐖𝐄𝐑𝐃 𝐁𝐘 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃` }, { quoted: m });
   } catch (error) {
     console.error('Error in Flux command:', error);
     reply(`*AN ERROR OCCURRED!! MESSAGE :*\n\n> ${error.message}`);
