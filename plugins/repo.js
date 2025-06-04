@@ -1,59 +1,3 @@
-
-
-/*
-const config = require('../config')
-const {cmd , commands} = require('../command')
-cmd({
-    pattern: "repo",
-    alias: ["sc","repo","info"],
-    desc: "bot repo",
-    react: "🤖",
-    category: "main",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-let repo =`
-*╭──────────────●●►*
-> *BOT OWNER:*
-*|* *bmbxmd*
-
-> *pkdriller REPO:*
-*|* https://github.com/pkdriller/B.M.B-XMD
-
-> *SUPPORT GROUP:*
-*|* Follow the B.M.B 🇹🇿TECH 🇹🇿 channel on https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z
-*╰──────────────●●►*
-
-> *CREATED BY 🔥B.M.B-XMD🔥*
-`
-await conn.sendMessage(from, { text: repo ,
-  contextInfo: {
-    mentionedJid: [ '' ],
-    groupMentions: [],
-    forwardingScore: 999,
-    isForwarded: false,
-    forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363382023564830@newsletter',
-      newsletterName: "𝙱.𝙼.𝙱-𝚇𝙼𝙳🇹🇿",
-      serverMessageId: 999
-    },
-externalAdReply: { 
-title: '𝙱.𝙼.𝙱-𝚇𝙼𝙳🇹🇿',
-body: `${pushname}`,
-mediaType: 1,
-sourceUrl: "https://github.com/bmbxmd/B.M.B-XMD" ,
-thumbnailUrl: "https://files.catbox.moe/lph7xd.jpg" ,
-renderLargerThumbnail: true,
-showAdAttribution: true
-}
-}}, { quoted: mek})}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-});
-*/
-
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
@@ -70,7 +14,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/bmbxmd/B.M.B-XMD';
+    const githubRepoURL = 'no reoo';
 
     try {
         // Extract username and repo name from the URL
@@ -86,18 +30,18 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 🔥B.M.B-XMD🔥 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!* 
+        const formattedInfo = `*𝐇𝐄𝐋𝐋𝐎 𝐓𝐇𝐄𝐑𝐄 ☠𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃☠ 𝐖.𝐀 𝐁𝐎𝐓 𝐔𝐒𝐄𝐑!* 
 
 > *a whatsapp bot that enhance your experience with amazing features,developed by 𝙱.𝙼.𝙱-𝚇𝙼𝙳🇹🇿.*🔥
 
-*𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐄𝐈𝐍𝐆 🔥B.M.B-𝐗𝐌𝐃🔥* 
+*𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐄𝐈𝐍𝐆 ☠𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃☠* 
 
 > *ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ & ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ🌟🍴*
 
-https://github.com/bmbxmd/B.M.B-XMD
+no repo
 ──────────────────
 ${readMore}
-\`BOT NAME:\`🇹🇿
+\`BOT NAME:\`☠
 > ${repoData.name}
 
 \`OWNER NAME:\`👨‍💻
@@ -112,7 +56,7 @@ ${readMore}
 \`DESCRIPTION:\`📃
 > ${repoData.description || 'No description'}\n
 ──────────────────
-\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝙱.𝙼.𝙱-𝚇𝙼𝙳* 🎐`;
+\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ SILENT MD* 🎐`;
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {
@@ -123,8 +67,8 @@ ${readMore}
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363382023564830@newsletter',
-                    newsletterName: '☇ bmbxmd suppσrt  ⃪🔥𝆺𝅥',
+                    newsletterJid: '120363398452475846@newsletter',
+                    newsletterName: 'SILENT MD ☠',
                     serverMessageId: 143
                 }
             }
@@ -140,8 +84,8 @@ ${readMore}
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363382023564830@newsletter',
-                    newsletterName: '☇ bmbxmd suppσrt⃪🤖͎᪳᪳𝆺𝅥',
+                    newsletterJid: '120363398452475846@newsletter',
+                    newsletterName: 'SILENT MD☠',
                     serverMessageId: 143
                 }
             }
