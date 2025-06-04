@@ -15,7 +15,7 @@ cmd({
   try {
     const _0x33914b = await axios.get("https://api.quotable.io/random");
     const _0x26063f = _0x33914b.data;
-    const _0x25a0d1 = "\n💬 \"" + _0x26063f.content + "\"\n- " + _0x26063f.author + "\n> *QUOTES BY 𝐁.𝐌.𝐁-𝐗𝐌𝐃*\n        ";
+    const _0x25a0d1 = "\n💬 \"" + _0x26063f.content + "\"\n- " + _0x26063f.author + "\n> *QUOTES BY 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃*\n        ";
     return _0x31a8bd(_0x25a0d1);
   } catch (_0x50410a) {
     console.error("Error fetching quote:", _0x50410a);
