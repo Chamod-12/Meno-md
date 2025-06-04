@@ -9,7 +9,7 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/bmbxmd/B.M.B-XMD';
+    const githubRepoURL = 'no url';
 
     try {
         const match = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
@@ -30,7 +30,7 @@ async (conn, mek, m, { from, reply }) => {
 *DESCRIPTION:* ${data.description || 'No description'}
 *REPO LINK:* ${data.html_url}
 
-> *Powered by 𝙱.𝙼.𝙱-𝚇𝙼𝙳*
+> *Powered by nadu md*
         `.trim();
 
         reply(message);
