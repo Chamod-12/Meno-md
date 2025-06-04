@@ -3,7 +3,7 @@ const config = require('../config');
 
 cmd({
     pattern: "owner",
-    react: "🔥", 
+    react: "☠", 
     desc: "Get owner number",
     category: "main",
     filename: __filename
@@ -31,7 +31,7 @@ async (conn, mek, m, { from }) => {
         await conn.sendMessage(from, {
             image: { url: 'https://files.catbox.moe/s7pzei.jpg' }, // Image URL from your request
             caption: `
-╭━〔 *🔥𝐁.𝐌.𝐁-𝐗𝐌𝐃🔥* 〕━┈⊷
+╭━〔 *☠𝐒𝐈𝐋𝐄𝐍𝐓 𝐌𝐃☠* 〕━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
 ┃◈┃• *Name* - ${ownerName}
@@ -39,14 +39,14 @@ async (conn, mek, m, { from }) => {
 ┃◈┃• *Version*: 1.0.0
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ©𝐁.𝐌.𝐁-𝐗𝐌𝐃`, // Display the owner's details
+> ©𝐒𝐈𝐋𝐄𝐍𝐓 𝐌𝐃`, // Display the owner's details
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363382023564830@newsletter',
-                    newsletterName: 'BMB DEVS 🔥',
+                    newsletterJid: '120363398452475846@newsletter',
+                    newsletterName: 'SILENT MD ☠',
                     serverMessageId: 143
                 }            
             }
