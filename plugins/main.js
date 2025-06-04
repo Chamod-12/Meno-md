@@ -5,7 +5,7 @@ const {runtime} = require('../lib/functions')
 const axios = require('axios')
 
 cmd({
-    pattern: "menu2",
+    pattern: "menu",
     alias: "allmenu",
     desc: "menu the bot",
     category: "menu2",
@@ -15,7 +15,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `
-╭━〔 *𝐁.𝐌.𝐁-𝐗𝐌𝐃* 〕━┈⊷
+╭━〔 *☠𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃☠* 〕━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *${config.OWNER_NAME}*
 ┃★│ Baileys : *Multi Device*
@@ -259,8 +259,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363382023564830@newsletter',
-                        newsletterName: '🔥𝐁.𝐌.𝐁-𝐗𝐌𝐃🔥',
+                        newsletterJid: '120363398452475846@newsletter',
+                        newsletterName: '☠𝐒𝐈𝐋𝐄𝐍𝐓 𝐌𝐃☠',
                         serverMessageId: 143
                     }
                 }
