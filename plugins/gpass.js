@@ -58,6 +58,6 @@ cmd({
     });
   } catch (_0x1ad7bb) {
     console.log(_0x1ad7bb);
-    _0x1bb557("❌𝐁.𝐌.𝐁-𝐗𝐌𝐃 Error generating password🤕: " + _0x1ad7bb.message);
+    _0x1bb557("❌𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 Error generating password🤕: " + _0x1ad7bb.message);
   }
 });
