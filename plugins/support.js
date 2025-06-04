@@ -19,7 +19,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 let dec = `    
 ⟣──────────────────⟢
-▧ *ᴄʀᴇᴀᴛᴏʀ* : *B.M.B-XMD  (🇹🇿)*
+▧ *ᴄʀᴇᴀᴛᴏʀ* : *𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 (☠)*
 ▧ *ᴍᴏᴅᴇ* : *${config.MODE}*
 ▧ *ᴘʀᴇғɪx* : *${config.PREFIX}*
 ▧ *ʀᴀᴍ* : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
@@ -27,18 +27,18 @@ let dec = `
 ▧ *ᴜᴘᴛɪᴍᴇ* : ${runtime(process.uptime())}
 ⟣──────────────────⟢
 
-> 𝐁.𝐌.𝐁-𝐗𝐌𝐃
+> 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃☠
 
 ⟣──────────────────⟢
 ${readMore}
 CHANNEL🛠️
-https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z
+https://whatsapp.com/channel/0029Vb69IgXBqbrGn2PrF43M
 
 GROUP 👥
-https://chat.whatsapp.com/JpIXcc3AndB3d9pdK2Cg1I
+no group 
 
-B.M.B-XMD *Dev🧑‍💻*
-https://wa.me/255767862457?text=Support!
+𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 *nadu🧑‍💻*
+https://wa.me/message/TU773WQ6TOXGB1
 
 ⟣──────────────────⟢
 `;
@@ -53,8 +53,8 @@ await conn.sendMessage(
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363382023564830@newsletter',
-                        newsletterName: '『 B.M.B-XMD 』',
+                        newsletterJid: '120363398452475846@newsletter',
+                        newsletterName: '『 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 』',
                         serverMessageId: 143
                     }
                 }
