@@ -42,8 +42,8 @@ async (conn, mek, m, {
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363352087070233@newsletter',
-          newsletterName: "𝐁.𝐌.𝐁-𝐗𝐌𝐃",
+          newsletterJid: '120363398452475846@newsletter',
+          newsletterName: "𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃",
           serverMessageId: 143,
         },
       },
