@@ -49,7 +49,7 @@ cmd({
     repoInfo += `📝 *Description*: ${repoData.description || "No description provided"}\n`;
     repoInfo += `⭐ *Stars*: ${repoData.stargazers_count}\n`;
     repoInfo += `🍴 *Forks*: ${repoData.forks_count}\n\n`;
-    repoInfo += "> *© Powered By 𝐁.𝐌.𝐁-𝐗𝐌𝐃 *\n";
+    repoInfo += "> *© Powered By SILENT MD *\n";
 
     // Send repository info as a message
     await conn.sendMessage(from, { text: repoInfo }, { quoted });
