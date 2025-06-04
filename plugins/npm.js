@@ -33,7 +33,7 @@ cmd({
 
     // Create the response message
     const message = `
-*𝐁.𝐌.𝐁-𝐗𝐌𝐃 NPM SEARCH*
+*𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 NPM SEARCH*
 
 *🔰 NPM PACKAGE:* ${packageName}
 *📄 DESCRIPTION:* ${description}
