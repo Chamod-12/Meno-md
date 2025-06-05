@@ -17,249 +17,6 @@ const {
   commands
 } = require('../command');
 cmd({
-  'pattern': "tiktok",
-  'alias': ['tt'],
-  'react': '🎥',
-  'desc': "download tt videos",
-  'category': "download",
-  'filename': __filename
-}, async (_0x17ba40, _0x3e7702, _0x2a55b1, {
-  from: _0x2af3cb,
-  quoted: _0x5a90c5,
-  body: _0x3b8f49,
-  isCmd: _0x179688,
-  command: _0x42362d,
-  args: _0x31ccaa,
-  q: _0x11bfff,
-  isGroup: _0xdefcea,
-  sender: _0x2542cf,
-  senderNumber: _0x3aa611,
-  botNumber2: _0x22057c,
-  botNumber: _0x23b31a,
-  pushname: _0x24af73,
-  isMe: _0x3594b3,
-  isOwner: _0x24a3e5,
-  groupMetadata: _0x2466d5,
-  groupName: _0x37e617,
-  participants: _0x567e09,
-  groupAdmins: _0x12f2aa,
-  isBotAdmins: _0x5e033e,
-  isAdmins: _0x497b76,
-  reply: _0x5f3bbd
-}) => {
-  try {
-    if (!_0x11bfff && !_0x11bfff.startsWith('https://')) {
-      return _0x5f3bbd("*`Need url`*");
-    }
-    _0x2a55b1.react('⬇️');
-    let _0x3f9407 = await downloadTiktok(_0x11bfff);
-    let _0x4f6891 = "╭━━━〔 *⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠* 〕━━━┈⊷\n┃▸╭───────────\n┃▸┃๏ *TIKTOK DOWNLOADER*\n┃▸└───────────···๏\n╰────────────────┈⊷\n╭━━━❐━⪼\n┇๏ *Title* - " + _0x3f9407.result.title + " \n╰━━━❐━⪼\n╭━❮ *Download Video* ❯━┈⊷\n┃▸╭─────────────·๏\n┃▸┃๏ *1*     ┃  *SD Quality*\n┃▸┃๏ *2*     ┃  *HD Quality*\n┃▸└────────────┈⊷\n╰━━━━━━━━━━━━━━━⪼\n╭━❮ *Download Audio* ❯━┈⊷\n┃▸╭─────────────·๏\n┃▸┃๏ *3*     ┃  *Audio*\n┃▸└────────────┈⊷\n╰━━━━━━━━━━━━━━━⪼\n> *©⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠ ♡*";
-    const _0x29dff7 = await _0x17ba40.sendMessage(_0x2af3cb, {
-      'image': {
-        'url': _0x3f9407.result.image
-      },
-      'caption': _0x4f6891
-    });
-    const _0x5e0151 = _0x29dff7.key.id;
-    _0x17ba40.ev.on("messages.upsert", async _0x571114 => {
-      const _0x55381c = _0x571114.messages[0x0];
-      if (!_0x55381c.message) {
-        return;
-      }
-      const _0x14072d = _0x55381c.message.conversation || _0x55381c.message.extendedTextMessage?.["text"];
-      const _0x2029bb = _0x55381c.key.remoteJid;
-      const _0x20da59 = _0x55381c.message.extendedTextMessage && _0x55381c.message.extendedTextMessage.contextInfo.stanzaId === _0x5e0151;
-      if (_0x20da59) {
-        await _0x17ba40.sendMessage(_0x2029bb, {
-          'react': {
-            'text': '⬇️',
-            'key': _0x55381c.key
-          }
-        });
-        let _0x27cf5f = _0x3f9407.result;
-        await _0x17ba40.sendMessage(_0x2029bb, {
-          'react': {
-            'text': '⬆️',
-            'key': _0x55381c.key
-          }
-        });
-        if (_0x14072d === '1') {
-          await _0x17ba40.sendMessage(_0x2029bb, {
-            'video': {
-              'url': _0x27cf5f.dl_link.download_mp4_1
-            },
-            'caption': "*©⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠*"
-          }, {
-            'quoted': _0x55381c
-          });
-        } else {
-          if (_0x14072d === '2') {
-            await _0x17ba40.sendMessage(_0x2029bb, {
-              'video': {
-                'url': _0x27cf5f.dl_link.download_mp4_2
-              },
-              'caption': "*© ⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠*"
-            }, {
-              'quoted': _0x55381c
-            });
-          } else if (_0x14072d === '3') {
-            await _0x17ba40.sendMessage(_0x2029bb, {
-              'audio': {
-                'url': _0x27cf5f.dl_link.download_mp3
-              },
-              'mimetype': "audio/mpeg"
-            }, {
-              'quoted': _0x55381c
-            });
-          }
-        }
-      }
-    });
-  } catch (_0x1192a5) {
-    console.log(_0x1192a5);
-    _0x5f3bbd('' + _0x1192a5);
-  }
-});
-cmd({
-  'pattern': 'fb',
-  'alias': ["facebook"],
-  'desc': "Download Facebook videos",
-  'category': "download",
-  'filename': __filename
-}, async (_0x463020, _0x55bd97, _0x368c99, {
-  from: _0xd59c39,
-  quoted: _0x3054c8,
-  body: _0x267a02,
-  isCmd: _0x3e2744,
-  command: _0x79551a,
-  args: _0x1989d2,
-  q: _0x32da14,
-  isGroup: _0x3f7b6f,
-  sender: _0x42116d,
-  senderNumber: _0x45dc5e,
-  botNumber2: _0x34e464,
-  botNumber: _0x461cb9,
-  pushname: _0x213d3c,
-  isMe: _0x44ce4f,
-  isOwner: _0x1feea4,
-  groupMetadata: _0x3e49b1,
-  groupName: _0x20f33f,
-  participants: _0x5d4661,
-  groupAdmins: _0x57a821,
-  isBotAdmins: _0x122d73,
-  isAdmins: _0x1d8749,
-  reply: _0x26d68e
-}) => {
-  try {
-    if (!_0x32da14 || !_0x32da14.startsWith("https://")) {
-      return _0x463020.sendMessage(_0xd59c39, {
-        'text': "*`Need URL`*"
-      }, {
-        'quoted': _0x55bd97
-      });
-    }
-    await _0x463020.sendMessage(_0xd59c39, {
-      'react': {
-        'text': '⏳',
-        'key': _0x55bd97.key
-      }
-    });
-    const _0xba6170 = await facebook(_0x32da14);
-    const _0x8af79d = "╭━━━〔 *⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠* 〕━━━┈⊷\n┃▸╭───────────\n┃▸┃๏ *FB DOWNLOADER*\n┃▸└───────────···๏\n╰────────────────┈⊷\n╭━━━❐━⪼\n┇๏ *Duration* - " + _0xba6170.result.duration + " \n╰━━━❐━⪼\n╭━❮ *Download Video* ❯━┈⊷\n┃▸╭─────────────·๏\n┃▸┃๏ *1.1*     ┃  *SD Quality*\n┃▸┃๏ *1.2*     ┃  *HD Quality*\n┃▸└────────────┈⊷\n╰━━━━━━━━━━━━━━━⪼\n╭━❮ *Download Audio* ❯━┈⊷\n┃▸╭─────────────·๏\n┃▸┃๏ *2.1*     ┃  *Audio*\n┃▸┃๏ *2.2*     ┃  *Document*\n┃▸┃๏ *2.3*     ┃  *Voice*\n┃▸└────────────┈⊷\n╰━━━━━━━━━━━━━━━⪼\n> *© ⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠♡*";
-    const _0x1e4914 = await _0x463020.sendMessage(_0xd59c39, {
-      'image': {
-        'url': _0xba6170.result.thumbnail
-      },
-      'caption': _0x8af79d
-    }, {
-      'quoted': _0x55bd97
-    });
-    const _0x304402 = _0x1e4914.key.id;
-    _0x463020.ev.on("messages.upsert", async _0x1fb420 => {
-      const _0x3ddaca = _0x1fb420.messages[0x0];
-      if (!_0x3ddaca.message) {
-        return;
-      }
-      const _0x56b3d7 = _0x3ddaca.message.conversation || _0x3ddaca.message.extendedTextMessage?.['text'];
-      const _0x138ae5 = _0x3ddaca.key.remoteJid;
-      const _0x188836 = _0x3ddaca.message.extendedTextMessage && _0x3ddaca.message.extendedTextMessage.contextInfo.stanzaId === _0x304402;
-      if (_0x188836) {
-        await _0x463020.sendMessage(_0x138ae5, {
-          'react': {
-            'text': '⬇️',
-            'key': _0x3ddaca.key
-          }
-        });
-        let _0x3f9d82 = _0xba6170.result;
-        await _0x463020.sendMessage(_0x138ae5, {
-          'react': {
-            'text': '⬆️',
-            'key': _0x3ddaca.key
-          }
-        });
-        if (_0x56b3d7 === "1.1") {
-          await _0x463020.sendMessage(_0x138ae5, {
-            'video': {
-              'url': _0x3f9d82.links.SD
-            },
-            'caption': "*©⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠*"
-          }, {
-            'quoted': _0x3ddaca
-          });
-        } else {
-          if (_0x56b3d7 === "1.2") {
-            await _0x463020.sendMessage(_0x138ae5, {
-              'video': {
-                'url': _0x3f9d82.links.HD
-              },
-              'caption': "*©⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠*"
-            }, {
-              'quoted': _0x3ddaca
-            });
-          } else {
-            if (_0x56b3d7 === '2.1') {
-              await _0x463020.sendMessage(_0x138ae5, {
-                'audio': {
-                  'url': _0x3f9d82.links.SD
-                },
-                'mimetype': "audio/mpeg"
-              }, {
-                'quoted': _0x3ddaca
-              });
-            } else {
-              if (_0x56b3d7 === '2.2') {
-                await _0x463020.sendMessage(_0x138ae5, {
-                  'document': {
-                    'url': _0x3f9d82.links.SD
-                  },
-                  'mimetype': "audio/mpeg",
-                  'fileName': "SPARK/FBDL.mp3",
-                  'caption': "*©⎝⧹ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 ⧸⎠*"
-                }, {
-                  'quoted': _0x3ddaca
-                });
-              } else if (_0x56b3d7 === '2.3') {
-                await _0x463020.sendMessage(_0x138ae5, {
-                  'audio': {
-                    'url': _0x3f9d82.links.SD
-                  },
-                  'mimetype': "audio/mp4",
-                  'ptt': true
-                }, {
-                  'quoted': _0x3ddaca
-                });
-              }
-            }
-          }
-        }
-      }
-    });
-  } catch (_0x536e30) {
-    console.log(_0x536e30);
-    _0x26d68e('' + _0x536e30);
-  }
-});
-cmd({
   'pattern': "twitter",
   'alias': ["tweet", 'twdl'],
   'desc': "Download Twitter videos",
@@ -1145,5 +902,222 @@ cmd({
     });
   } catch (_0x5d813c) {
     console.log(_0x5d813c);
+  }
+});
+// nadu md Video Download Command
+cmd({
+  pattern: "mp4",
+  alias: ["video", "playy"],
+  react: "🎥",
+  desc: "Download YouTube video",
+  category: "main",
+  use: ".mp4 <YouTube URL or Name>",
+  filename: __filename,
+}, async (client, message, input, { from, prefix, quoted, query, reply }) => {
+  try {
+    // Validate input
+    if (!query) return await reply("Please provide a YouTube URL or video name.");
+
+    // Search YouTube for the query
+    const searchResults = await ytsearch(query);
+    if (searchResults.results.length < 1) return reply("No results found!");
+
+    // Get the first video result
+    const video = searchResults.results[0];
+    const videoUrl = `https://apis.davidcyriltech.my.id/download/ytmp4?url=${encodeURIComponent(video.url)}`;
+
+    // Fetch video download URL
+    const response = await fetch(videoUrl);
+    const data = await response.json();
+
+    // Validate response
+    if (data.status !== 200 || !data.success || !data.result.download_url) {
+      return reply("Failed to fetch the video. Please try again later.");
+    }
+
+    // Prepare video details message
+    const videoDetails = `
+📹 *Video Details*
+🎬 *Title:* ${video.title}
+⏳ *Duration:* ${video.views}
+👀 *Views:* ${video.author.name}
+👤 *Author:* ${video.url}
+🔗 *Link:* ${video.url}
+\n*Choose download format:*
+1. 📄 Document (no preview)
+2. ▶️ Normal Video (with preview)
+\n_Reply to this message with 1 or 2 to download._
+`;
+
+    // Send video details with thumbnail
+    const contextInfo = {
+      mentionedJid: [input.sender],
+      forwardingScore: 999,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: "120363398452475846@newsletter",
+        newsletterName: "𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃",
+        serverMessageId: 143,
+      },
+    };
+
+    const sentMessage = await client.sendMessage(from, {
+      image: { url: video.thumbnail },
+      caption: videoDetails,
+      contextInfo,
+    }, { quoted: message });
+
+    // Listen for user reply to select download format
+    client.ev.on("messages.upsert", async ({ messages }) => {
+      const msg = messages[0];
+      if (!msg.message || !msg.message.extendedTextMessage) return;
+
+      const userResponse = msg.message.extendedTextMessage.text.trim();
+      if (msg.message.extendedTextMessage.contextInfo?.stanzaId === sentMessage.key.id) {
+        await client.sendMessage(from, { react: { text: "⬇️", key: msg.key } });
+
+        switch (userResponse) {
+          case "1":
+            // Send video as document
+            await client.sendMessage(from, {
+              document: { url: data.result.download_url },
+              mimetype: "video/mp4",
+              fileName: `${video.title}.mp4`,
+              contextInfo,
+            }, { quoted: msg });
+            break;
+          case "2":
+            // Send video with preview
+            await client.sendMessage(from, {
+              video: { url: data.result.download_url },
+              mimetype: "video/mp4",
+              contextInfo,
+            }, { quoted: msg });
+            break;
+          default:
+            await client.sendMessage(from, {
+              text: "*Invalid selection, please select between (1 or 2) 🔴*",
+            }, { quoted: msg });
+            break;
+        }
+      }
+    });
+  } catch (error) {
+    console.log(error);
+    reply("An error occurred. Please try again later.");
+  }
+});
+
+// nadu md Audio Download Command
+cmd({
+  pattern: "song",
+  alias: ["ytdl3", "mp3"],
+  react: "🎶",
+  desc: "Download YouTube song",
+  category: "main",
+  use: ".song <YouTube URL or Name>",
+  filename: __filename,
+}, async (client, message, input, { from, prefix, quoted, query, reply }) => {
+  try {
+    // Validate input
+    if (!query) return await reply("Please provide a YouTube URL or song name.");
+
+    // Search YouTube for the query
+    const searchResults = await ytsearch(query);
+    if (searchResults.results.length < 1) return reply("No results found!");
+
+    // Get the first audio result
+    const audio = searchResults.results[0];
+    const audioUrl = `https://apis.davidcyriltech.my.id/youtube/mp3?url=${encodeURIComponent(audio.url)}`;
+
+    // Fetch audio download URL
+    const response = await fetch(audioUrl);
+    const data = await response.json();
+
+    // Validate response
+    if (data.status !== 200 || !data.success || !data.result.downloadUrl) {
+      return reply("Failed to fetch the audio. Please try again later.");
+    }
+
+    // Prepare audio details message
+    const audioDetails = `
+🎵 *Song Details*
+🎶 *Title:* ${audio.title}
+⏳ *Duration:* ${audio.views}
+👀 *Views:* ${audio.author.name}
+👤 *Author:* ${audio.url}
+🔗 *Link:* ${audio.url}
+\n*Choose download format:*
+1. 📄 MP3 as Document
+2. 🎧 MP3 as Audio (Play)
+3. 🎙️ MP3 as Voice Note (PTT)
+\n_Reply with 1, 2 or 3 to this message to download the format you prefer._
+`;
+
+    // Send audio details with thumbnail
+    const contextInfo = {
+      mentionedJid: [input.sender],
+      forwardingScore: 999,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: "120363398452475846@newsletter",
+        newsletterName: "𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃",
+        serverMessageId: 143,
+      },
+    };
+
+    const sentMessage = await client.sendMessage(from, {
+      image: { url: audio.thumbnail },
+      caption: audioDetails,
+      contextInfo,
+    }, { quoted: message });
+
+    // Listen for user reply to select download format
+    client.ev.on("messages.upsert", async ({ messages }) => {
+      const msg = messages[0];
+      if (!msg.message || !msg.message.extendedTextMessage) return;
+
+      const userResponse = msg.message.extendedTextMessage.text.trim();
+      if (msg.message.extendedTextMessage.contextInfo?.stanzaId === sentMessage.key.id) {
+        await client.sendMessage(from, { react: { text: "⬇️", key: msg.key } });
+
+        switch (userResponse) {
+          case "1":
+            // Send audio as document
+            await client.sendMessage(from, {
+              document: { url: data.result.downloadUrl },
+              mimetype: "audio/mpeg",
+              fileName: `${audio.title}.mp3`,
+              contextInfo,
+            }, { quoted: msg });
+            break;
+          case "2":
+            // Send audio as playable MP3
+            await client.sendMessage(from, {
+              audio: { url: data.result.downloadUrl },
+              mimetype: "audio/mpeg",
+              contextInfo,
+            }, { quoted: msg });
+            break;
+          case "3":
+            // Send audio as voice note
+            await client.sendMessage(from, {
+              audio: { url: data.result.downloadUrl },
+              mimetype: "audio/mpeg",
+              ptt: true,
+              contextInfo,
+            }, { quoted: msg });
+            break;
+          default:
+            await client.sendMessage(from, {
+              text: "*Invalid selection, please select between (1, 2, or 3) 🔴*",
+            }, { quoted: msg });
+            break;
+        }
+      }
+    });
+  } catch (error) {
+    console.log(error);
+    reply("An error occurred. Please try again later.");
   }
 });
