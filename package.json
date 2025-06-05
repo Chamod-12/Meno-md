@@ -4,9 +4,9 @@
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name SILENT MD",
-    "stop": "pm2 stop SILENT MD",
-    "restart": "pm2 restart SILENT MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name SILENT-MD",
+    "stop": "pm2 stop SILENT-MD",
+    "restart": "pm2 restart SILENT-MD"
   },
 "dependencies": {
         "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
@@ -20,7 +20,7 @@
         "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@google/generative-ai": "0.17.1",
         "@saipulanuar/scraper": "3.0.0",
-        "@sasmeee/wabetainfo": "1.1.1",
+        "@sasmeee/wabetainfo": "0.0.1-security",
         "@sl-code-lords/esana-news": "1.0.3",
         "@sl-code-lords/image-library": "1.0.0",
         "@sl-code-lords/movie-dl": "1.1.0",
