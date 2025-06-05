@@ -1121,3 +1121,60 @@ cmd({
     reply("An error occurred. Please try again later.");
   }
 });
+
+const apikey = `sadiya`;
+
+cmd({
+    pattern: "fb",
+    desc: "Downlord Fb Video.",
+    category: "download",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if(!q) return reply("Please give me fb url");
+
+const fb = await fetchJson(`https://sadiya-tech-apis.vercel.app/download/fbdl?url=${q}&apikey=${apikey}`);
+let fbmsg = `*🎥 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃 FB DL.🎥*
+
+*Title* - ${fb.result.title}`;
+
+await conn.sendMessage(from, { image: {url: fb.result.thumb }, caption: fbmsg }, { quoted: mek });
+
+await conn.sendMessage(from, { video: { url: fb.result.sd }, mimetype: "video/mp4", caption: `SD\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃*` }, { quoted: mek });
+await conn.sendMessage(from, { video: { url: fb.result.hd }, mimetype: "video/mp4", caption: `HD\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃*` }, { quoted: mek });
+
+}catch(e){
+console.log(e)
+reply(e)
+}
+})
+
+const apikey = `sadiya`;
+
+cmd({
+    pattern: "tt",
+    desc: "Downlord tiktok Video.",
+    category: "download",
+    filename: __filename
+},
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try{
+if(!q) return reply("Please give me tiktok url");
+
+const ttdl = await fetchJson(`https://sadiya-tech-apis.vercel.app/download/tiktokdl?url=${q}&apikey=sadiya`);
+let ttmsg = `*🎥 𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃  TT DL 🎥*
+
+*Title* - ${ttdl.result.title}
+*caption* - ${ttdl.result.caption}`;
+
+await conn.sendMessage(from, { image: {url: ttdl.result.thumbnail }, caption: ttmsg }, { quoted: mek });
+
+await conn.sendMessage(from, { video: { url: ttdl.result.nowm }, mimetype: "video/mp4", caption: `NOWM\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ  𝐒𝐈𝐋𝐄𝐍𝐓-𝐌𝐃*` }, { quoted: mek });
+await conn.sendMessage(from, { audio: { url: ttdl.result.music }, mimetype: "audio/mpeg" }, { quoted: mek });
+
+}catch(e){
+console.log(e)
+reply(e)
+}
+})
